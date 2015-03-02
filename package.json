@@ -1,0 +1,13 @@
+{
+  "name" : "crx" ,
+  "version" : "0.1.0" ,
+  "devDependencies" : {
+    "gulp" : "git://github.com/gulpjs/gulp#4.0" ,
+    "gulp-uglify" : "*" ,
+    "gulp-minify-css" : "*" ,
+    "gulp-htmlmin" : "*" ,
+    "gulp-changed" : "*" ,
+    "del" : "*" ,
+    "gulp-jsonmin" : "*"
+  }
+}

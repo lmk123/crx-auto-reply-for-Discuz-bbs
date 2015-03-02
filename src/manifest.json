@@ -1,0 +1,32 @@
+﻿{
+  "name" : "自动回复隐藏帖" ,
+  "description" : "可以预先定义多条回复消息，检测到隐藏帖时会从中随机选择一条自动回复，无需手动输入；回复时若检测到用户未登录，会提示用户。" ,
+  "manifest_version" : 2 ,
+  "version" : "1.0" ,
+  "icons" : {
+    "128" : "logo.png" ,
+    "16" : "logo.png" ,
+    "48" : "logo.png"
+  } ,
+  "author" : "Milk Lee( milk.lee@qq.com )" ,
+  "permissions" : [
+    "*://*/*" ,
+    "storage"
+  ] ,
+  "background" : {
+    "scripts" : ["bg.js"] ,
+    "persistent" : false
+  } ,
+  "options_page" : "options.html" ,
+  "content_scripts" : [
+    {
+      "matches" : [
+        "http://*/*" ,
+        "https://*/*"
+      ] ,
+      "js" : ["content.js"] ,
+      "all_frames" : true ,
+      "run_at" : "document_end"
+    }
+  ]
+}

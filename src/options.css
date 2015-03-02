@@ -1,0 +1,41 @@
+body, button {
+    font-size: 1rem;
+}
+
+#saved {
+    display: none;
+}
+
+#saved.show {
+    display: inline-block;
+}
+
+li, button {
+    cursor: pointer;
+}
+
+li:not(.empty):hover {
+    border-color: #000;
+}
+
+li {
+    font-size: 1.2rem;
+    border: 1px solid transparent;
+    padding: 5px 0;
+}
+
+li.empty {
+    font-size: 1rem;
+    cursor: text;
+    color: #999;
+}
+
+.install {
+    display: none;
+}
+
+#install:target .install {
+    display: block;
+    background-color: greenyellow;
+    padding: 5px 0;
+}
